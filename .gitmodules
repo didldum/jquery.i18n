@@ -1,6 +1,6 @@
 [submodule "libs/qunit"]
 	path = libs/qunit
-	url = git://github.com/jquery/qunit.git
+	url = git://github.com/didldum/qunit.git
 [submodule "libs/CLDRPluralRuleParser"]
 	path = libs/CLDRPluralRuleParser
-	url = git://github.com/santhoshtr/CLDRPluralRuleParser.git
+	url = git://github.com/didldum/CLDRPluralRuleParser.git
