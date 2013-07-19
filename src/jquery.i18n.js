@@ -130,7 +130,7 @@
 		},
 
 		log: function ( /* arguments */ ) {
-			if ( window.console && $.i18n.debug ) {
+			if ( window.console && $.i18n.debug && window.console.log.apply) {
 				window.console.log.apply( window.console, arguments );
 			}
 		},
