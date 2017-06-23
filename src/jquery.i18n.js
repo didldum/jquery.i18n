@@ -149,6 +149,7 @@
 			// pass it to the parser.
 			this.parser.language = $.i18n.languages[$.i18n().locale] || $.i18n.languages['default'];
 			if( message === '' ) {
+				this.log("missing translation: "+key);
 				message = key;
 			}
 			return this.parser.parse( message, parameters );
@@ -214,6 +215,8 @@
 				var messageKey = $this.data( 'i18n' ),
 					message = messageKey.toLocaleString();
 				if ( message !== '' ) {
+					// debug missing translations
+					i18n.log("missing translation: "+message);
 					$this.text( message );
 				}
 			} else {
